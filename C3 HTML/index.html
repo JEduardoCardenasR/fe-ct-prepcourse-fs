@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Primer Sitio Web</title>
+    </head>
+    <body>
+        <!-- Contenido de la página va aquí--> 
+        <header>
+            <h1>Mi Página Web</h1>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#acerca">Acerca de</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <section id="inicio">
+                <h2>Bienvenido</h2>
+                <p>Esta es la página de inicio de la empresa "Estudiando Soy Henry".</p>
+                <img src="../../Mi primera página web/Imagen.jpg" alt="Imagen de ejemplo">
+                <hr />
+            </section>
+    
+            <section id="acerca">
+                <h2>Acerca de Nosotros</h2>
+                <p>Nuestra empresa se dedica a estudiar Soy Henry.</p>
+                <article>
+                    <h3>Nuestra Historia</h3>
+                    <p>Empezamos hace unos días con el PrepCourse, esperando estar pronto en el Henry Challenge.</p>
+                    <hr />
+                </article>
+                <article>
+                    <h3>Nuestro Equipo</h3>
+                    <p>Este equipo de trabajo se conforma por mi.</p>
+                    <hr />
+                </article>
+            </section>
+    
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <form action="/submit" method="post">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido">
+                    </div>
+                    <div>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico">
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí"></textarea>
+                    </div>
+                    <div>
+                        <label>Género:</label>
+                        <input type="radio" id="masculino" name="genero" value="masculino">
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" id="femenino" name="genero" value="femenino">
+                        <label for="femenino">Femenino</label>
+                    </div>
+                    <div>
+                        <label for="intereses">Intereses:</label>
+                        <input type="checkbox" id="intereses1" name="intereses" value="tecnología">
+                        <label for="intereses1">Tecnología</label>
+                        <input type="checkbox" id="intereses2" name="intereses" value="ciencia">
+                        <label for="intereses2">Ciencia</label>
+                    </div>
+                    <div>
+                        <label for="pais">País:</label>
+                        <select id="pais" name="pais">
+                            <option value="mexico">México</option>
+                            <option value="españa">España</option>
+                            <option value="colombia">Colombia</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+                <hr />
+            </section>
+        </main>
+    
+        <footer>
+            <p>&copy; 2024 Mi Página Web</p>
+            <p>Para más información, visita nuestra <a href="./Contacto.html">página de contacto</a>.</p>
+        </footer>
+    </body>
+</html>
